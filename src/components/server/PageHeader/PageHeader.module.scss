@@ -1,0 +1,14 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  max-width: var(--page-width);
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

@@ -1,0 +1,68 @@
+$_padding-block: 0.5rem;
+$_padding-inline: 1rem;
+$_icon-size: 1.5rem;
+
+.Container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.Icon {
+  position: absolute;
+  z-index: 2;
+  left: #{$_padding-inline};
+  color: #ccc;
+}
+
+.Input {
+  position: static;
+  z-index: 1;
+  padding: $_padding-block $_padding-inline;
+  padding-left: calc(2 * $_padding-inline + $_icon-size);
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.25rem;
+
+  &:focus {
+    outline: none;
+    border-color: #000;
+  }
+}
+
+.Results {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  max-height: 0;
+  overflow-y: auto;
+  // Hide scrollbar.
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  border-radius: 0.5rem;
+  width: 100%;
+  background-color: #fff;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.ResultsVisible {
+  max-height: 18rem;
+  pointer-events: auto;
+}
+
+.Result {
+  padding: 0.5rem $_padding-inline;
+  cursor: pointer;
+  color: #000;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}

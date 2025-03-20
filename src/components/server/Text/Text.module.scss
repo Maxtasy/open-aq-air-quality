@@ -1,0 +1,58 @@
+.Base {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.Variant {
+  &--BodySm {
+    font-size: 0.875rem;
+    line-height: 1.1;
+  }
+
+  &--BodyMd {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  &--BodyLg {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  &--HeadingMd {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  &--HeadingLg {
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  &--HeadingXl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+}
+
+.Align {
+  &--Center {
+    text-align: center;
+  }
+
+  &--Left {
+    text-align: left;
+  }
+
+  &--Right {
+    text-align: right;
+  }
+}
+
+.Transform {
+  &--Uppercase {
+    text-transform: uppercase;
+  }
+}
