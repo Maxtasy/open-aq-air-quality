@@ -68,6 +68,8 @@ export function Search() {
             <Text variant="body-lg">{result.name}</Text>
             <Text variant="body-sm">{result.locality}</Text>
             <Text variant="body-sm">{result.country.name}</Text>
+            {/* TODO: Add Sensor data */}
+            <Text variant="body-sm">SENSOR DATA PLACEHOLDER...</Text>
           </ResultCard>
         ))}
       </div>
